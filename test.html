@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="300"
+        style="border:1px solid #000000;">
+
+</canvas>
+<script>
+
+//脸
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    // ctx.fillStyle="#FFFF00";
+    ctx.beginPath();
+    ctx.arc(190,100,80,0,2*Math.PI);
+    ctx.stroke();
+    // ctx.fill();
+
+//嘴巴
+    ctx.beginPath();
+    ctx.arc(190,100,60,0,1*Math.PI);
+    ctx.stroke();
+
+//晶状体*2
+    ctx.fillStyle="#000000";
+    ctx.beginPath();
+    ctx.arc(140,70,10,0,2*Math.PI);
+    ctx.stroke();
+    ctx.fill();
+
+    ctx.fillStyle="#000000";
+    ctx.beginPath();
+    ctx.arc(210,70,10,0,2*Math.PI);
+    ctx.stroke();
+    ctx.fill();
+
+
+//眼白*2
+    ctx.beginPath();
+    ctx.arc(170,70,10,0,1*Math.PI);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(155,70,25,600,2*Math.PI);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(155,70,5,600,2*Math.PI);
+    ctx.stroke();
+
+
+    ctx.beginPath();
+    ctx.arc(225,70,25,600,2*Math.PI);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(225,70,5,600,2*Math.PI);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(240,70,10,0,1*Math.PI);
+    ctx.stroke();
+</script>
+
+</body>
+</html>
